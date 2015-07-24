@@ -53,9 +53,13 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-LifeOfGame/Alamofire.framework'
+  install_framework 'Pods-LifeOfGame/ChameleonFramework.framework'
   install_framework 'Pods-LifeOfGame/Kingfisher.framework'
+  install_framework 'Pods-LifeOfGame/SwiftyJSON.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-LifeOfGame/Alamofire.framework'
+  install_framework 'Pods-LifeOfGame/ChameleonFramework.framework'
   install_framework 'Pods-LifeOfGame/Kingfisher.framework'
+  install_framework 'Pods-LifeOfGame/SwiftyJSON.framework'
 fi
