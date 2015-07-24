@@ -16,9 +16,13 @@
 		090429221B60EC1A006CBC59 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090429211B60EC1A006CBC59 /* GamesViewController.swift */; };
 		090429241B60EC27006CBC59 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090429231B60EC27006CBC59 /* MessagesViewController.swift */; };
 		090429261B60EC31006CBC59 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090429251B60EC31006CBC59 /* MineViewController.swift */; };
-		0952A8461B62150E00994FB5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952A8441B62150E00994FB5 /* Realm.framework */; };
-		0952A8471B62150E00994FB5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952A8451B62150E00994FB5 /* RealmSwift.framework */; };
 		3633200F7A07283EC8D2300B /* Pods_LifeOfGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B787F631C8341546583580 /* Pods_LifeOfGame.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		449F720F1B623CD30048EBDF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449F720D1B623CD30048EBDF /* RealmSwift.framework */; };
+		449F72111B623D530048EBDF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449F72101B623D530048EBDF /* Realm.framework */; };
+		449F72121B623D590048EBDF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449F72101B623D530048EBDF /* Realm.framework */; };
+		449F72131B623D590048EBDF /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449F72101B623D530048EBDF /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		449F72151B623D670048EBDF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449F720D1B623CD30048EBDF /* RealmSwift.framework */; };
+		449F72161B623D670048EBDF /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449F720D1B623CD30048EBDF /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,21 @@
 			remoteInfo = LifeOfGame;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		449F72141B623D590048EBDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				449F72161B623D670048EBDF /* RealmSwift.framework in Embed Frameworks */,
+				449F72131B623D590048EBDF /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		090428ED1B60E505006CBC59 /* LifeOfGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeOfGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +67,8 @@
 		090429251B60EC31006CBC59 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		0952A8441B62150E00994FB5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		0952A8451B62150E00994FB5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		449F720D1B623CD30048EBDF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		449F72101B623D530048EBDF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		44A70D74C401EC96AB67245F /* Pods-LifeOfGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeOfGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeOfGame/Pods-LifeOfGame.debug.xcconfig"; sourceTree = "<group>"; };
 		6F0E9C86C049EECBE59B0B51 /* Pods-LifeOfGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeOfGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeOfGame/Pods-LifeOfGame.release.xcconfig"; sourceTree = "<group>"; };
 		D1B787F631C8341546583580 /* Pods_LifeOfGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeOfGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,9 +79,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0952A8461B62150E00994FB5 /* Realm.framework in Frameworks */,
+				449F72121B623D590048EBDF /* Realm.framework in Frameworks */,
+				449F72151B623D670048EBDF /* RealmSwift.framework in Frameworks */,
+				449F72111B623D530048EBDF /* Realm.framework in Frameworks */,
+				449F720F1B623CD30048EBDF /* RealmSwift.framework in Frameworks */,
 				3633200F7A07283EC8D2300B /* Pods_LifeOfGame.framework in Frameworks */,
-				0952A8471B62150E00994FB5 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +268,20 @@
 		21A5ABEF94937099789E80EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				449F720B1B623CD30048EBDF /* RealmSwift */,
 				D1B787F631C8341546583580 /* Pods_LifeOfGame.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449F720B1B623CD30048EBDF /* RealmSwift */ = {
+			isa = PBXGroup;
+			children = (
+				449F72101B623D530048EBDF /* Realm.framework */,
+				449F720D1B623CD30048EBDF /* RealmSwift.framework */,
+			);
+			name = RealmSwift;
+			path = LifeOfGame/Vendors/RealmSwift;
 			sourceTree = "<group>";
 		};
 		5582EDF8D66FCA6C2A042D9B /* Pods */ = {
@@ -272,6 +306,7 @@
 				090428EB1B60E505006CBC59 /* Resources */,
 				E2E9A3B847F782556D044EEF /* Embed Pods Frameworks */,
 				C747568F0E1DB6AFBB6975F4 /* Copy Pods Resources */,
+				449F72141B623D590048EBDF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
